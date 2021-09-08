@@ -1,0 +1,21 @@
+{
+    "name": "wanderleyfa/pest-test",
+    "autoload": {
+        "psr-0": {
+            "App": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wanderley Ferreira de Albuquerque",
+            "email": "wanderleyfa@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^1.18"
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    }
+  }
+  
