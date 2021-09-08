@@ -13,5 +13,5 @@ $ composer install
 
 ## ☑️ Rodar testes
 ```bash
-$ composer run test
+$ composer test
 ```
