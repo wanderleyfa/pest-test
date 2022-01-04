@@ -1,10 +1,10 @@
 # :rocket: TDD com PHP ( usando Pest)
 
 ## :page_facing_up: Detalhamento do projeto
-aprendendo sobre testes com PestPHP
+aprendendo sobre testes com PestPHP com php puro
 e sobre docker
 
-## 🔨 Instalação
+## 🔨 execução
 ```bash
 $ docker-compose up -d
 $ docker exec -it pest-test sh
