@@ -50,3 +50,21 @@ test('Tesoura perde', function () {
     $playGame = new PlayGame();
     $this->assertEquals($playGame->execute($partida), "JogadorDois");
 });
+
+test('Movimento jogador um inexistente', function () {
+    $jogadorUm = new Player("JogadorUm");
+    $jogadorDois = new Player("JogadorDois");
+    $partida = new Game($jogadorUm, $jogadorDois, "Tesouras", "Pedra");
+
+    $playGame = new PlayGame();
+    $this->assertEquals($playGame->execute($partida), "Movimento inexistente");
+});
+
+test('Movimento jogador dois inexistente', function () {
+    $jogadorUm = new Player("JogadorUm");
+    $jogadorDois = new Player("JogadorDois");
+    $partida = new Game($jogadorUm, $jogadorDois, "Tesoura", "rocha");
+
+    $playGame = new PlayGame();
+    $this->assertEquals($playGame->execute($partida), "Movimento inexistente");
+});
